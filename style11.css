@@ -1,0 +1,574 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   */
+
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed, 
+   figure, figcaption, footer, header, hgroup, 
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+   }
+   /* HTML5 display-role reset for older browsers */
+   article, aside, details, figcaption, figure, 
+   footer, header, hgroup, menu, nav, section {
+      display: block;
+   }
+   body {
+      line-height: 1;
+   }
+   ol, ul {
+      list-style: none;
+   }
+   blockquote, q {
+      quotes: none;
+   }
+   blockquote:before, blockquote:after,
+   q:before, q:after {
+      content: '';
+      content: none;
+   }
+   table {
+      border-collapse: collapse;
+      border-spacing: 0;
+   }
+
+
+
+
+
+
+
+
+
+    /* layout */
+   body{
+    font-family: 'Microsoft JhengHei';
+    }
+
+   .wrap{
+       width: 1024px;
+       margin: 0 auto;
+       position: relative;
+   }
+   h3{
+    font-size: 34px;
+    color: #00cc99;
+    font-weight: bold;
+    }
+   .header {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       position: absolute;
+       width: 100%;
+       background:rgb(129, 129, 129,0.3);
+   }
+   .header h1 a{
+       background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/logo.png);
+       background-repeat: no-repeat;
+       background-position-y: center;
+       display: block;
+       width: 224px;
+       padding: 32px 0;
+       text-indent: 101%;
+       white-space: nowrap;
+       overflow: hidden;
+       margin-left: 40px;
+       transition: .3s;
+   }
+   .header h1 a:hover{
+    opacity: .5;
+    }   
+    .header .menu{
+        display: flex;
+    }
+    .header .menu a{
+        text-decoration: none;
+        padding: 25px;
+        margin-right: 30px;
+        color: #fff;
+        transition: .3s;
+    }
+    .header .menu a:hover{
+        color: #00cc99;
+        border-bottom: 5px solid #00cc99;
+    }
+    .footer{
+        background-color: #323228;
+        display: flex;
+        padding: 30px 40px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer .logo{
+        text-align: right;
+        color: #9b9b9b;
+    }
+    .footer .logo p{
+        margin-top: 5px;
+    }
+    .footer .social img{
+        margin-left: 20px;
+    }
+    .footer .social a:hover{
+        opacity: .5;
+        cursor: pointer;
+    }
+
+
+
+
+    
+
+
+
+
+    /* index */
+    .index-banner {
+        background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_index.png);
+        /* height: 560px; */
+        margin-bottom: 60px;
+        padding: 180px 35px 130px;
+    }
+    .index-banner h2{
+        font-size: 45px;
+        color: #00cc99;
+        line-height: 1.5;
+    }
+    .index-banner h2 span{
+        color: #fff;
+    }
+    .index-banner nav a{
+        margin-top: 55px;
+        display: block;
+        text-decoration: none;
+        width: 220px;
+        height: 55px;
+        text-align: center;
+        line-height: 55px;
+        color: #fff;
+        background-color: #00cc99;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    .index-banner nav span{
+        padding-left: 20px;
+    }
+    .index-banner nav a:hover{
+        color: #00cc99;
+        background-color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .index-content,.index-comparison{
+        margin: 0 40px 60px;
+    }
+    .index-content .uppercontent{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .index-content .uppercontent-text,.index-comparison .uppercontent{
+        display: flex;
+        align-items: flex-end;
+    }
+    .index-content .uppercontent-text p,.index-comparison .uppercontent p{
+        color: #9b9b9b;
+        margin-left: 10px;
+        font-size: 18px;
+    }
+    .index-content .uppercontent input{
+        background-color: #fff;
+        color: #00cc99;
+        border: 1px solid #00cc99;
+        border-radius: 5px;
+        padding: 2px 15px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .index-content .uppercontent input:hover{
+        background: #00cc99;
+        color: #fff;
+    }
+    .index-content .course{
+        display: flex;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .index-content li{
+        box-shadow: 0px 2px 5px #aaa;
+        border-radius: 3px;
+        padding: 25px 0;
+    }
+    .index-content .rwd{
+        margin: 0 20px;
+    }
+    .index-content .course h4{
+        font-size: 18px;
+        margin: 10px 0 10px 0;
+    }
+    .index-content .course p{
+        text-align: justify;
+        color: #9b9b9b;
+        padding: 0 20px 0 20px;
+    }
+    .index-comparison .comparison{
+        text-align: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .index-comparison .comparison th{
+        background-color: #ebebeb;
+        font-weight: bold;
+
+    }
+    .index-comparison th,.index-comparison td{
+        padding: 15px 0;
+        border-top: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+    }
+    .index-comparison span{
+        color:#00cc99;
+    }
+    .index-info{
+        display: flex;
+        background-color: #ebebeb;
+        justify-content: space-between;
+    }
+    .index-info h4{
+        width: 50%;
+        padding: 130px 100px 130px 40px;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 2;
+    }
+    .index-info .info{
+        padding: 130px 40px 0 0;
+        width: 50%;
+    }
+    .index-info .name,.index-info .mail,.index-info .submit{
+        margin-bottom: 20px;
+    }
+    .index-info .namebox,.index-info .mailbox{
+        width: 100%;
+        padding: 15px 0;
+        text-indent: 20px;
+        color: #9b9b9b;
+        border: none;
+        border-radius: 5px;
+    }
+    .index-info .submit{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .index-info .submit .btn{
+        background-color: #00cc99;
+        color: #fff;
+        padding: 10px 30px;
+        border-radius: 5px;
+        border: none;
+    }
+    .index-info .submit .btn:hover{
+        background-color: #fff;
+        color: #00cc99;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+
+    /* course */
+    .course-banner,
+    .course-content .teacher-info,
+    .course-content .specialty,
+    .course-content .outline{
+        margin-bottom: 60px;
+    }
+    .course-banner{
+        background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_course.png);
+        
+        padding: 180px 35px 180px;
+    }
+    .course-banner h2{
+        font-size: 45px;
+        color: #fff;
+        line-height: 1.5;
+    }
+    .course-banner p{
+        color: #00cc99;
+        font-size: 22px;
+        margin-top: 15px;
+    }
+    .course-banner input{
+        margin-top: 55px;
+        display: block;
+        border: none;
+        width: 220px;
+        height: 55px;
+        text-align: center;
+        line-height: 55px;
+        color: #fff;
+        background-color: #00cc99;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    .course-banner input:hover{
+        color: #00cc99;
+        background-color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .course-banner .image{
+        position: absolute;
+        top: 115px;
+        right: 55px;
+    }
+    .course-content{
+        margin: 0 200px;
+    }
+    .course-content .teacher-info{
+        display: flex;
+        justify-content: space-between;
+    }
+    .course-content .teacher-info span{
+        color: #000000;
+        display: block;
+        margin-top: 15px;
+    }
+    .course-content .teacher-info ul{
+        list-style-type: disc;
+        color: #b2b2b2;
+        line-height: 1.5;
+    }
+    .course-content .teacher-name,.course-content ul{
+        margin-top: 60px;
+    }
+    .course-content .specialty .title,
+    .course-content .outline .title{
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 26px;
+    }
+    .course-content .specialty .title p,
+    .course-content .outline .title p{
+        color: #9b9b9b;
+        font-size: 18px;
+        margin-left: 15px;;
+    }
+    .course-content .specialty ol{
+        list-style-type: decimal;
+        margin-left: 20px;
+        line-height: 1.5;
+    }
+    .course-content .specialty li{
+        padding-left: 20px;
+    }
+    .course-content .outline table{
+        width: 100%;
+        
+    }
+    .course-content .outline table td{
+        padding: 18px 0 18px 36px;
+        color: #b2b2b2;
+    }
+    .course-content .outline .item{
+        background-color: #ebebeb;
+        color: #000000;
+    }
+    .course-info{
+        background-color: #ebebeb;
+        display: flex;
+        align-items: flex-end;
+        padding: 150px 200px;
+    }
+    .course-info h4{
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 2;
+    }
+    .course-info input{
+        margin-left: 60px;
+        color: #fff;
+        border: none;
+        width: 220px;
+        height: 55px;
+        text-align: center;
+        line-height: 55px;
+        background-color: #00cc99;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    .course-info input:hover{
+        color: #00cc99;
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+
+    /* faq */
+    .faq-banner,
+    .common-faq,
+    .pay-faq,
+    .refund-faq{
+        margin-bottom: 60px;
+    }
+    .faq-banner{
+        background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_QA.png);
+        background-repeat: no-repeat;
+        padding: 180px 200px;
+        text-align: center;
+    }
+    .faq-banner h2{
+        font-size: 45px;
+        color: #fff;
+    }
+    .faq-banner p{
+        color: #00cc99;
+        font-size: 22px;
+        margin: 15px 0 50px;
+    }
+    .faq-banner input{
+        width: 570px;
+       padding: 15px 0;
+    }
+    .faq-banner #mark{
+        color: #ffffff;
+        padding: 10px;
+        font-size: 22px;
+    }
+    .faq-banner #mark:hover{
+        opacity: .5;
+        cursor: pointer;
+    }
+    .faq-content{
+        margin: 0 120px;
+    }
+    .faq-content .common-faq .title,
+    .faq-content .pay-faq .title,
+    .faq-content .refund-faq .title{
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 30px;
+    }
+    .faq-content .common-faq .title p,
+    .faq-content .pay-faq .title p,
+    .faq-content .refund-faq .title p{
+        color: #9b9b9b;
+        font-size: 18px;
+        margin-left: 15px;;
+    }
+    .faq-content .qa{
+        line-height: 1.5;
+    }
+    .faq-content .qa h4{
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    .faq-content .qa p,
+    .faq-content .pay-faq ol,
+    .faq-content .refund-faq ul{
+        font-size: 14px;
+        color: #9b9b9b;
+    }
+    .faq-content .qa span{
+        color: #00cc99;
+    }
+    .faq-content .pay-faq ol{
+        list-style-type: decimal;
+        margin-left: 42px;
+    }
+    .faq-content .pay-faq li{
+        padding-left: 20px;
+    }
+    .faq-content .refund-faq ul{
+        list-style-type: disc;
+        margin-left: 44px;
+    }
+    .faq-content .refund-faq .item{
+        color: #000000;
+        margin-top: 30px;
+    }
+    .faq-info{
+        background-color: #ebebeb;
+        display: flex;
+        width: 100%;
+        padding: 130px 0 60px;
+    }
+    .faq-info h4{
+        width: 50%;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 2;
+        margin-left: 40px;
+    }
+    .faq-info .info{
+        width: 50%;
+        margin-right: 30px;
+    }
+    .faq-info .name,
+    .faq-info .mail,
+    .faq-info .text{
+        margin-bottom: 20px;
+    }
+    .faq-info .namebox,
+    .faq-info .mailbox{
+        padding: 10px 0;
+        width: 100%;
+        color: #9b9b9b;
+        border: none;
+        font-size: 18px;
+        text-indent: 20px;
+        border-radius: 5px;
+    }
+    .faq-info .textbox{
+        padding: 10px 0 120px;
+        text-indent: 20px;
+        width: 100%;
+        border: none;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    .faq-info .submit{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .faq-info .btn{
+        border: none;
+        color: #fff;
+        background-color: #00cc99;
+        padding: 10px 30px;
+        border-radius: 5px;
+        
+    }
+    .faq-info .btn:hover{
+        color: #00cc99;
+        background-color: #fff;
+        cursor: pointer;
+    }
